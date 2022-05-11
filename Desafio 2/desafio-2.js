@@ -1,7 +1,7 @@
 //Calcular IVA de un producto. Si el precio es menor a $100 debe comprarlo, si es mayor no debe comprarlo
 
 let producto = prompt('Que producto queres comprar?');
-let precio= Number(prompt('Cuanto cuesta?'));
+let precio= Number(prompt('Ingrese costo para calcular IVA?'));
 
 function calcularPrecioIva(producto, precio){
     return producto * 1.21;
