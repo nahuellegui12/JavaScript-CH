@@ -3,8 +3,9 @@
 let producto = prompt('Que producto queres comprar?');
 let precio= Number(prompt('Ingrese costo para calcular IVA?'));
 
-function calcularPrecioIva(producto, precio){
-    return producto * 1.21;
+function calcularPrecioIva(precio){
+    let iva = 1.21;
+    return producto * iva;
 }
 
 console.log ("El producto " + producto + " Cuesta " + "$" + calcularPrecioIva(precio));
