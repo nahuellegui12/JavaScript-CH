@@ -14,5 +14,5 @@ let producto4 = new producto("remera", 100, "gratis");
 let arrayDeProductos = [producto1, producto2, producto3, producto4];
 
 for(i=0; i<arrayDeProductos.length; i++){
-    console.log(`Producto:${arrayDeProductos[i].nombre} Precio:${arrayDeProductos[i].precio} Envio:${arrayDeProductos[i].envio}`);
+    console.log(`Producto:${arrayDeProductos[i].nombre} Precio:$${arrayDeProductos[i].precio} Envio:${arrayDeProductos[i].envio}`);
 }
