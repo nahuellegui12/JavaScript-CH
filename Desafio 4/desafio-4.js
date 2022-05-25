@@ -2,6 +2,10 @@ class producto{
     constructor(nombre, envio){
         this.nombre = nombre;
         this.envio = envio;
+        let estado = "vendido";
+        this.mostrarEstado = function(){
+            console.log(`El estado de este producto es: ${estado}`);
+        } 
     }
 }
 
@@ -14,6 +18,12 @@ function crearObjeto(nombre, envio){
     
 }
 
+function calcularIva(precio){
+    precio = precio * 1.21;
+    return precio;
+}
+
+
 let producto1 = crearObjeto();
 let producto2 = crearObjeto();
 
@@ -23,14 +33,15 @@ console.log(arrayDeProductos);
 let producto3 = crearObjeto();
 
 arrayDeProductos.push(producto3);
-
 console.log(arrayDeProductos);
 
 for(let i=0; i<arrayDeProductos.length; i++){
-    arrayDeProductos[i].precio = prompt("Cuanto cuesta?")
+    arrayDeProductos[i].precio = Number(prompt("Cuanto cuesta?"))
 }
 
 for(let i=0; i < arrayDeProductos.length; i++){
-    arrayDeProductos[i].precio = arrayDeProductos[i].precio * 1.21
-    console.log(`El precio con IVA de ${arrayDeProductos[i].nombre} es de $${arrayDeProductos[i].precio}`);
+    precio = arrayDeProductos[i].precio;
+    precio = calcularIva(precio);
+    console.log(`El precio con IVA de ${arrayDeProductos[i].nombre} es de $${precio}`);
+    arrayDeProductos[i].mostrarEstado();
 }
