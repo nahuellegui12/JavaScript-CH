@@ -1,4 +1,4 @@
-document.querySelector(".crear-productos").onclick = function () {
+document.querySelector(".crear-productos").onclick = () => {
   let $cantidadDeProductos = document.querySelector(".cantidad-de-productos");
   let cantidadDeProductos = Number($cantidadDeProductos.value);
 
