@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.productos{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+.producto{
+    width: 150px;
+    height: 150px;
+    background-color: #ff4f4f;
+    margin: 0 20px 20px 0;
+    text-align: center;
+    line-height: 150px;
+    color: #111111;
+    user-select: none;
+}
